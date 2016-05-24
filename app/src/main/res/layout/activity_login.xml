@@ -1,0 +1,104 @@
+    <android.support.v4.widget.SlidingPaneLayout   
+  xmlns:android="http://schemas.android.com/apk/res/android"  
+  android:id="@+id/sliding_pane_layout"  
+  android:layout_width="match_parent"  
+  android:layout_height="match_parent" >  
+          <ListView  
+    android:id="@+id/left_pane"  
+    android:layout_width="280dp"  
+    android:layout_height="match_parent"  
+    android:layout_gravity="left" />  
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#badcff"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" 
+ 	android:focusable="true" 
+ 	android:focusableInTouchMode="true">
+    
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="233dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/logo_guia" />
+    
+    <LinearLayout 
+    android:id="@+id/lol"
+    android:layout_width="wrap_content"
+    android:layout_height="35sp"
+    android:layout_gravity="center_horizontal"
+    android:orientation="horizontal"
+     >
+            <ImageView
+        android:id="@+id/cadeado"
+        android:layout_height="45dp"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/cadeado" />
+            
+                <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/text1"
+        android:textSize="15sp" 
+        android:paddingLeft="10dp"
+        android:paddingTop="13dp"
+        android:text="Efetue seu login para prosseguir:"
+        android:layout_gravity="center"
+        />
+                </LinearLayout>
+        
+            
+
+
+   <EditText
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number">
+           </EditText>
+  
+        <EditText
+            android:id="@+id/senha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_gravity="center"
+            
+            android:inputType="textPassword" />
+  <CheckBox
+        android:id="@+id/memorizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Memorizar"  android:textSize="15sp"  />
+        
+        <Button
+            android:id="@+id/entrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Entrar" 
+            android:layout_gravity="center"
+            />
+    
+                      <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/avisos"
+        android:textSize="10sp" 
+     
+        android:text= "*Seus dados ficarão armazenados apenas em seu celular."
+						
+        android:layout_gravity="center"
+        />
+                      
+</LinearLayout>
+  </android.support.v4.widget.SlidingPaneLayout>
