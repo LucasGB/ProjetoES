@@ -7,7 +7,10 @@ import java.util.Date;
 import com.example.guiautfpr.R;
 import com.example.guiautfpr.R.id;
 import com.example.guiautfpr.R.layout;
+import com.orochi.guiautfpr.persistence.DatabaseOperations;
 
+import android.content.Context;
+import android.database.Cursor;
 import android.support.v4.widget.SlidingPaneLayout;
 import android.support.v4.widget.SlidingPaneLayout.PanelSlideListener;
 import android.support.v7.app.ActionBarActivity;
@@ -33,7 +36,9 @@ public class PainelActivity extends ActionBarActivity implements PanelSlideListe
 	  private final int LOGOFF = 2;
 	  private SlidingPaneLayout mSlidingLayout;  
 	  private ListView mList;  
-	  Date hoje = null; // Sei lá
+	  Date hoje = null; // Sei lï¿½
+
+		private Context ctx = this;
 
 	  int hora_dia = DadosAulas.horaDia(hoje);
 	  int dia_semana = Calendar.getInstance().get(Calendar.DAY_OF_WEEK)-2; // Pegar o dia da semana pra usar na matriz
@@ -45,16 +50,16 @@ public class PainelActivity extends ActionBarActivity implements PanelSlideListe
 		setContentView(R.layout.activity_painel);
 		//Referente ao menu
 		mSlidingLayout = (SlidingPaneLayout) findViewById(R.id.sliding_pane_layout);  
-		 mSlidingLayout.setPanelSlideListener(this);  
+		 mSlidingLayout.setPanelSlideListener(this);
 			    
 			    String[] opcoes = new String[] {   
-			    "Relatórios",
-			    "Horário dos ônibus",   		    
-			    "Logoff"};  
+			    "RelatÃ³rios",
+			    "HorÃ¡rio dos Ã”nibus",
+			    "Logoff"};
 	
-			 mList = (ListView) findViewById(R.id.left_pane);  
-			    mList.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, opcoes));  
-			    mList.setOnItemClickListener(this); 
+			 mList = (ListView) findViewById(R.id.left_pane);
+			    mList.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, opcoes));
+			    mList.setOnItemClickListener(this);
 		  // Fim do que se refere ao menu
 			    
 				final AlertDialog.Builder builder1 = new AlertDialog.Builder(this);
@@ -84,13 +89,13 @@ public class PainelActivity extends ActionBarActivity implements PanelSlideListe
 	    String faixaHr = "";
 		 if(dia_semana < 0) dia_semana = 5;
 		 
-	if( DadosAulas.aulas[hora_dia][dia_semana].equals("&nbsp;")){ // Se não tiver aula nesse horário
-	while(DadosAulas.aulas[hora_dia][dia_semana].equals("&nbsp;")){
-	hora_dia++;
-	}
-	 materiaAtual = DadosAulas.aulas[hora_dia][dia_semana].split("/")[0];
-	 salaAtual = DadosAulas.aulas[hora_dia][dia_semana].split("/")[1];
-		 faixaHr = DadosAulas.faixaHoraria(hora_dia);
+	if(DadosAulas.aulas[hora_dia][dia_semana].equals("&nbsp;")){ // Se nÃ£o tiver aula nesse horÃ¡rio
+	    while(DadosAulas.aulas[hora_dia][dia_semana].equals("&nbsp;")){
+	        hora_dia++;
+	    }
+	    materiaAtual = DadosAulas.aulas[hora_dia][dia_semana].split("/")[0];
+	    salaAtual = DadosAulas.aulas[hora_dia][dia_semana].split("/")[1];
+		faixaHr = DadosAulas.faixaHoraria(hora_dia);
 	}
 	else { // Se tiver aula...
 		 materiaAtual = DadosAulas.aulas[hora_dia][dia_semana].split("/")[0];
@@ -123,7 +128,7 @@ public class PainelActivity extends ActionBarActivity implements PanelSlideListe
 		String faixaHr = DadosAulas.faixaHoraria(hora_dia);
 		 if(dia_semana < 0) dia_semana = 5;
 		 
-	if( DadosAulas.aulas[hora_dia][dia_semana].equals("&nbsp;")){ // Se não tiver aula nesse horário
+	if( DadosAulas.aulas[hora_dia][dia_semana].equals("&nbsp;")){ // Se nï¿½o tiver aula nesse horï¿½rio
 		materiaAtual = "N/A";
 		salaAtual = "N/A";
 	}
@@ -199,7 +204,9 @@ public void onItemClick(AdapterView<?> adapterView,
 //	else if(position == SOBRE){	
 //     	startActivity(new Intent(PainelActivity.this, SobreActivity.class));
 //	} VIET CARMA
-	else if(position == LOGOFF){	
+	else if(position == LOGOFF){
+		DatabaseOperations dbo = new DatabaseOperations(ctx);
+        dbo.deleteLoginInformation(dbo);
      	startActivity(new Intent(PainelActivity.this, LoginActivity.class));
     	finish();
 	}

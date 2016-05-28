@@ -15,7 +15,7 @@ abstract public class DadosAluno extends Application {
 	static private String senha;
 	static private String curso;
 	static private String codCurso;
-	static private String tpcurcodnr;  // Que porra são essas?
+	static private String tpcurcodnr;  // Que porra sï¿½o essas?
 	static private String alcuordemnr; //
 	static private String situacao;
 	static private String periodo;

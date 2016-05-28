@@ -30,7 +30,7 @@ public class TelaSplash extends ActionBarActivity implements Runnable {
      	startActivity(intent);
     	finish();
     	
-  //      anima_logo(); // AnimaÁ„o do simbolo
+  //      anima_logo(); // Anima√ß√£o do simbolo
 
     //    Processos proc = new Processos(this);
     //   proc.execute();
@@ -57,8 +57,8 @@ public class TelaSplash extends ActionBarActivity implements Runnable {
         } 
 
 
-        // … invocado para fazer uma atualizaÁ„o na
-        // interface gr·fica
+        // √â invocado para fazer uma atualiza√ß√£o na
+        // interface gr√°fica
         protected void onProgressUpdate(Void...arg0) {
         }
 
@@ -66,7 +66,7 @@ public class TelaSplash extends ActionBarActivity implements Runnable {
 		protected Void doInBackground(Void...arg0) {
 	        Conexao conexao = new Conexao();
 			SharedPreferences settings = getSharedPreferences("DADOS", 0);
-			if(settings.getString("login", "") != "" && settings.getString("senha", "") != "" ){  // SE J¡ HOUVER DADOS CADASTRADOS LOGA AUTOMATICAMENTE
+			if(settings.getString("login", "") != "" && settings.getString("senha", "") != "" ){  // SE JÔøΩ HOUVER DADOS CADASTRADOS LOGA AUTOMATICAMENTE
 				String user = settings.getString("login", "");
 				String pass = settings.getString("senha", "");
 				String con_utf =  conexao.homeHTML(user, pass);
@@ -79,7 +79,7 @@ public class TelaSplash extends ActionBarActivity implements Runnable {
 	    	 		
 	    	    	finish();
 	    	 		
-	    	 	}else{//SEN√O, VAI PRA TELA DE LOGIN
+	    	 	}else{//SEN√ÉO, VAI PRA TELA DE LOGIN
 	    	 		Intent intent = new Intent(mContext, LoginActivity.class);
 	    	 		intent.putExtra("login", user);
 	    	 		intent.putExtra("senha", pass);

@@ -43,7 +43,7 @@ public class OnibusActivity extends ActionBarActivity {
 		if(dia_semana != 5 && dia_semana != -1){
 			 horarios = "07:00/07:25/09:20/10:20/12:05/13:00/13:50/15:50/17:05/17:40/18:00/18:45/21:25/20:00/22:05/23:05";
 			 horarios2 = "06:45/07:20/07:55/09:10/10:10/12:45/13:15/13:40/15:35/17:30/18:30/18:50/19:15/20:10/21:10";
-			}else if(dia_semana == 5){// Se for s·bado
+			}else if(dia_semana == 5){// Se for s√°bado
 					 horarios = "07:00/07:25/09:20/10:20/12:05";
 					 horarios2 = "06:45/07:15/07:55/09:10/10:10";
 			}

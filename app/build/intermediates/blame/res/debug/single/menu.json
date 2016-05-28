@@ -1,34 +1,34 @@
 [
     {
-        "merged": "C:\\Users\\Orochi\\Desktop\\GuiaUTFPR2\\app\\build\\intermediates\\res\\merged\\debug\\menu\\sobre.xml",
-        "source": "C:\\Users\\Orochi\\Desktop\\GuiaUTFPR2\\app\\src\\main\\res\\menu\\sobre.xml"
+        "merged": "/home/lucas/Documents/ProjetoES/app/build/intermediates/res/merged/debug/menu/relatorio.xml",
+        "source": "/home/lucas/Documents/ProjetoES/app/src/main/res/menu/relatorio.xml"
     },
     {
-        "merged": "C:\\Users\\Orochi\\Desktop\\GuiaUTFPR2\\app\\build\\intermediates\\res\\merged\\debug\\menu\\relatorio.xml",
-        "source": "C:\\Users\\Orochi\\Desktop\\GuiaUTFPR2\\app\\src\\main\\res\\menu\\relatorio.xml"
+        "merged": "/home/lucas/Documents/ProjetoES/app/build/intermediates/res/merged/debug/menu/onibus.xml",
+        "source": "/home/lucas/Documents/ProjetoES/app/src/main/res/menu/onibus.xml"
     },
     {
-        "merged": "C:\\Users\\Orochi\\Desktop\\GuiaUTFPR2\\app\\build\\intermediates\\res\\merged\\debug\\menu\\onibus.xml",
-        "source": "C:\\Users\\Orochi\\Desktop\\GuiaUTFPR2\\app\\src\\main\\res\\menu\\onibus.xml"
+        "merged": "/home/lucas/Documents/ProjetoES/app/build/intermediates/res/merged/debug/menu/sobre.xml",
+        "source": "/home/lucas/Documents/ProjetoES/app/src/main/res/menu/sobre.xml"
     },
     {
-        "merged": "C:\\Users\\Orochi\\Desktop\\GuiaUTFPR2\\app\\build\\intermediates\\res\\merged\\debug\\menu\\tela_splash.xml",
-        "source": "C:\\Users\\Orochi\\Desktop\\GuiaUTFPR2\\app\\src\\main\\res\\menu\\tela_splash.xml"
+        "merged": "/home/lucas/Documents/ProjetoES/app/build/intermediates/res/merged/debug/menu/painel.xml",
+        "source": "/home/lucas/Documents/ProjetoES/app/src/main/res/menu/painel.xml"
     },
     {
-        "merged": "C:\\Users\\Orochi\\Desktop\\GuiaUTFPR2\\app\\build\\intermediates\\res\\merged\\debug\\menu\\login.xml",
-        "source": "C:\\Users\\Orochi\\Desktop\\GuiaUTFPR2\\app\\src\\main\\res\\menu\\login.xml"
+        "merged": "/home/lucas/Documents/ProjetoES/app/build/intermediates/res/merged/debug/menu/menu_relatorio.xml",
+        "source": "/home/lucas/Documents/ProjetoES/app/src/main/res/menu/menu_relatorio.xml"
     },
     {
-        "merged": "C:\\Users\\Orochi\\Desktop\\GuiaUTFPR2\\app\\build\\intermediates\\res\\merged\\debug\\menu\\painel.xml",
-        "source": "C:\\Users\\Orochi\\Desktop\\GuiaUTFPR2\\app\\src\\main\\res\\menu\\painel.xml"
+        "merged": "/home/lucas/Documents/ProjetoES/app/build/intermediates/res/merged/debug/menu/login.xml",
+        "source": "/home/lucas/Documents/ProjetoES/app/src/main/res/menu/login.xml"
     },
     {
-        "merged": "C:\\Users\\Orochi\\Desktop\\GuiaUTFPR2\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_relatorio.xml",
-        "source": "C:\\Users\\Orochi\\Desktop\\GuiaUTFPR2\\app\\src\\main\\res\\menu\\menu_relatorio.xml"
+        "merged": "/home/lucas/Documents/ProjetoES/app/build/intermediates/res/merged/debug/menu/tela_splash.xml",
+        "source": "/home/lucas/Documents/ProjetoES/app/src/main/res/menu/tela_splash.xml"
     },
     {
-        "merged": "C:\\Users\\Orochi\\Desktop\\GuiaUTFPR2\\app\\build\\intermediates\\res\\merged\\debug\\menu\\dados.xml",
-        "source": "C:\\Users\\Orochi\\Desktop\\GuiaUTFPR2\\app\\src\\main\\res\\menu\\dados.xml"
+        "merged": "/home/lucas/Documents/ProjetoES/app/build/intermediates/res/merged/debug/menu/dados.xml",
+        "source": "/home/lucas/Documents/ProjetoES/app/src/main/res/menu/dados.xml"
     }
 ]

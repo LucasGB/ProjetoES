@@ -3,7 +3,10 @@ package com.example.guiautfpr;
 import java.util.concurrent.ExecutionException;
 
 import com.example.guiautfpr.R;
+import com.orochi.guiautfpr.persistence.DatabaseOperations;
 
+import android.content.Context;
+import android.database.Cursor;
 import android.support.v4.widget.SlidingPaneLayout;
 import android.support.v4.widget.SlidingPaneLayout.PanelSlideListener;
 import android.support.v7.app.ActionBarActivity;
@@ -31,39 +34,47 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 public class LoginActivity extends ActionBarActivity implements PanelSlideListener, OnItemClickListener {
-	  private SlidingPaneLayout mSlidingLayout;  
-	  private ListView mList;  
-	  private final int MIN_DIGITOS_RA = 6;
-	  private final int MIN_DIGITOS_SENHA = 8;
+		private SlidingPaneLayout mSlidingLayout;
+		private ListView mList;
+		private final int MIN_DIGITOS_RA = 6;
+	  	private final int MIN_DIGITOS_SENHA = 8;
+		private Context ctx = this;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		
+
 		super.onCreate(savedInstanceState);
 		getSupportActionBar().hide();
 		setContentView(R.layout.activity_login);
 		Button entrar = (Button) findViewById(R.id.entrar);
 		final EditText login = (EditText) findViewById(R.id.login);
 		final EditText senha = (EditText) findViewById(R.id.senha);
+
 		//Referente ao menu
 		mSlidingLayout = (SlidingPaneLayout) findViewById(R.id.sliding_pane_layout);  
-		 mSlidingLayout.setPanelSlideListener(this);  
+        mSlidingLayout.setPanelSlideListener(this);
 			    
-			    String[] opcoes = new String[] {   
-			    "Horário dos ônibus",
-			   };  
+        String[] opcoes = new String[] {
+			    "HorÃ¡rio dos Ã”nibus",
+		};
 	
-			 mList = (ListView) findViewById(R.id.left_pane);  
-			 mList.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, opcoes));  
-			 mList.setOnItemClickListener(this); 
-		  // Fim do que se refere ao menu
-		SharedPreferences settings = getSharedPreferences("DADOS", 0);
+		mList = (ListView) findViewById(R.id.left_pane);
+		mList.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, opcoes));
+		mList.setOnItemClickListener(this);
+		// Fim do que se refere ao menu
 
-		if (settings.getString("login", "") != "" && settings.getString("senha", "") != "") { 								
-			String user = settings.getString("login", "");
-			String pass = settings.getString("senha", "");
-			login.setText(user);
-			senha.setText(pass);
-		}
+		DatabaseOperations dop = new DatabaseOperations(ctx);
+		Cursor c = dop.getInformation(dop);
+
+        if(c.moveToFirst()){
+            if(!(c.isNull(0) && c.isNull(1))){
+                login.setText(c.getString(0));
+                senha.setText(c.getString(1));
+                Logar logar = new Logar();
+                logar.execute(login.getText().toString(), senha.getText().toString());
+            }
+        }
+
 
 		senha.setOnKeyListener(new OnKeyListener()
 		{
@@ -75,14 +86,14 @@ public class LoginActivity extends ActionBarActivity implements PanelSlideListen
 		            {
 		                case KeyEvent.KEYCODE_DPAD_CENTER:
 		                case KeyEvent.KEYCODE_ENTER:
-		    				if(!login.getText().toString().equals("") && !senha.getText().toString().equals("") ){ // Verifica se os campos estão em branco
-		    					if(login.getText().toString().length() >= MIN_DIGITOS_RA){ // Verifica se os digitos do RA estão em um tamanho ideal
-		    						if(senha.getText().toString().length() >= MIN_DIGITOS_SENHA){ // Verifica se os digitos da senha estão em um tamanho ideal
-		    				Logar logar = new Logar();
-		    				logar.execute(login.getText().toString(), senha.getText().toString());
+		    				if(!login.getText().toString().equals("") && !senha.getText().toString().equals("") ){ // Verifica se os campos estï¿½o em branco
+		    					if(login.getText().toString().length() >= MIN_DIGITOS_RA){ // Verifica se os digitos do RA estï¿½o em um tamanho ideal
+		    						if(senha.getText().toString().length() >= MIN_DIGITOS_SENHA){ // Verifica se os digitos da senha estï¿½o em um tamanho ideal
+		    				            Logar logar = new Logar();
+		    				            logar.execute(login.getText().toString(), senha.getText().toString());
 		    						}
 		    						else{ // Login com menos digitos
-		    							Toast.makeText(getApplicationContext(), "Sua senha precisa ter no mínimo 8 digitos!", Toast.LENGTH_SHORT).show();
+		    							Toast.makeText(getApplicationContext(), "Sua senha precisa ter no mÃ­nimo 8 digitos!", Toast.LENGTH_SHORT).show();
 		    						}
 		    					}
 		    					else{ // Login com menos digitos
@@ -91,7 +102,7 @@ public class LoginActivity extends ActionBarActivity implements PanelSlideListen
 		    					
 		    				}else // Campo em branco
 		                	{
-		                		Toast.makeText(getApplicationContext(), "Algum campo está em branco!", Toast.LENGTH_SHORT).show();
+		                		Toast.makeText(getApplicationContext(), "Algum campo estÃ¡ em branco!", Toast.LENGTH_SHORT).show();
 		                	}
 		                    return true;
 		                default:
@@ -104,14 +115,15 @@ public class LoginActivity extends ActionBarActivity implements PanelSlideListen
 		
 		entrar.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
-				if(!login.getText().toString().equals("") && !senha.getText().toString().equals("") ){ // Verifica se os campos estão em branco
-					if(login.getText().toString().length() >= MIN_DIGITOS_RA){ // Verifica se os digitos do RA estão em um tamanho ideal
-						if(senha.getText().toString().length() >= MIN_DIGITOS_SENHA){ // Verifica se os digitos da senha estão em um tamanho ideal
-				Logar logar = new Logar();
-				logar.execute(login.getText().toString(), senha.getText().toString());
+				if(!login.getText().toString().equals("") && !senha.getText().toString().equals("") ){ // Verifica se os campos estï¿½o em branco
+					if(login.getText().toString().length() >= MIN_DIGITOS_RA){ // Verifica se os digitos do RA estï¿½o em um tamanho ideal
+						if(senha.getText().toString().length() >= MIN_DIGITOS_SENHA){ // Verifica se os digitos da senha estï¿½o em um tamanho ideal
+
+							Logar logar = new Logar();
+							logar.execute(login.getText().toString(), senha.getText().toString());
 						}
 						else{ // Login com menos digitos
-							Toast.makeText(getApplicationContext(), "Sua senha precisa ter no mínimo 8 digitos!", Toast.LENGTH_SHORT).show();
+							Toast.makeText(getApplicationContext(), "Sua senha precisa ter no mÃ­nimo 8 digitos!", Toast.LENGTH_SHORT).show();
 						}
 					}
 					else{ // Login com menos digitos
@@ -120,7 +132,7 @@ public class LoginActivity extends ActionBarActivity implements PanelSlideListen
 					
 				}else // Campo em branco
             	{
-            		Toast.makeText(getApplicationContext(), "Algum campo está em branco!", Toast.LENGTH_SHORT).show();
+            		Toast.makeText(getApplicationContext(), "Algum campo estÃ¡ em branco!", Toast.LENGTH_SHORT).show();
             	}
 			}
 
@@ -128,8 +140,8 @@ public class LoginActivity extends ActionBarActivity implements PanelSlideListen
 
 	}
 
-	// AsyncTask do inferno pois não pode usar acesso à internet direto na
-	// thread principal ¬¬
+	// AsyncTask do inferno pois nÃ£o pode usar acesso a internet direto na
+	// thread principal
 	class Logar extends AsyncTask<String, String, String> {
 
 		ProgressDialog dialog;
@@ -154,14 +166,15 @@ public class LoginActivity extends ActionBarActivity implements PanelSlideListen
 			DadosAluno.setSenha(senha);
 			if (!con_utf.equals("") && !con_utf.equals("SEMINTERNET")) {
    				if (memorizar.isChecked()) { // MEMORIZA LOGIN E SENHA
-					SharedPreferences settings = getSharedPreferences("DADOS",
-							0);
-					SharedPreferences.Editor editor = settings.edit();
-					editor.putString("login", login);
-					editor.putString("senha", senha);
-					editor.commit();
+					DatabaseOperations dbo = new DatabaseOperations(ctx);
+                    Cursor c = dbo.getInformation(dbo);
+                    if(!c.moveToFirst()){
+                        dbo.putInformation(dbo, login, senha);
+                    } else {
+                        dbo.rewriteInformation(dbo, login, senha);
+                    }
 				}
-   				
+
 				DadosAluno.dadosAluno(con_utf);
 			    String html = conexao.aulasHTML(DadosAluno.getRA(), DadosAluno.getSenha(), DadosAluno.getCodCurso(), DadosAluno.getAlcuordemnr());
 			    DadosAulas.puxaMaterias(html);
@@ -186,7 +199,7 @@ public class LoginActivity extends ActionBarActivity implements PanelSlideListen
 				String mensagem = "";
 				builder1.setTitle("Erro ao acessar UTFPR.");
 				if (con_utf.equals("SEMINTERNET")) {
-					mensagem = "Falha ao acessar a rede da UTFPR. Talvez você esteja sem internet.";
+					mensagem = "Falha ao acessar a rede da UTFPR. Talvez vocï¿½ esteja sem internet.";
 				} else if (con_utf.equals("")) {
 					mensagem = "Login ou senha incorretos.\nCorrija os dados e tente novamente.";
 				}

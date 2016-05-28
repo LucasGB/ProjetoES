@@ -24,10 +24,10 @@ public class RelatorioActivity extends ActionBarActivity  {
         Log.d("Teste", "Vai:" + cod);
 
         String[] values = new String[] { "Nome: " + DadosAulas.materias[cod][1], 
-                                         "Código: "  + DadosAulas.materias[cod][0],
+                                         "CÃ³digo: "  + DadosAulas.materias[cod][0],
                                          "Faltas: " + DadosAulas.materias[cod][5],
                                          "Aulas dadas: " + DadosAulas.materias[cod][7], 
-                                         "Sua frequência: " + DadosAulas.materias[cod][8], 
+                                         "Sua frequÃªncia: " + DadosAulas.materias[cod][8],
                                          "Nota: " + DadosAulas.materias[cod][3], 
                                          "Media parcial: " + DadosAulas.materias[cod][6], 
                                          "Turma: "  + DadosAulas.materias[cod][2], 
