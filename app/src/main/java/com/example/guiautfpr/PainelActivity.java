@@ -114,7 +114,7 @@ public class PainelActivity extends ActionBarActivity implements PanelSlideListe
 	materia.setText("" + materiaAtual);
 	faixaHorario.setText("" + faixaHr);int cod =  getCod(materiaAtual);
 		if(cod!=-1) {
-			faltas.setText("Faltas: " + DadosAulas.materias[cod][5]);
+			faltas.setText("Faltas: " + DadosAulas.materias[cod][5]+"/"+ DadosAulas.cargahorario[cod]);
 		}else{faltas.setText("Faltas: N/A");}
 	data.setText("" + weekdays[dia_semana+2] );
 	}
@@ -152,7 +152,7 @@ public class PainelActivity extends ActionBarActivity implements PanelSlideListe
 	faixaHorario.setText("" + faixaHr);
 		int cod =  getCod(materiaAtual);
 		if(cod!=-1) {
-			faltas.setText("Faltas: " + DadosAulas.materias[cod][5]);
+			faltas.setText("Faltas: " + DadosAulas.materias[cod][5]+"/"+ DadosAulas.cargahorario[cod]);
 		}else{faltas.setText("Faltas: N/A");}
 		data.setText("" + weekdays[dia_semana+2] );
 	}

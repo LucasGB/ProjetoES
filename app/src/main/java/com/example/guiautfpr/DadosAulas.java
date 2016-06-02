@@ -9,11 +9,11 @@ import android.util.Log;
 
 abstract public class DadosAulas {
 
-	
-		 public static String[][] materias; // 0 = codDisciplina // 1 = Nome // 2 = Turma //
-		 
+
+	public static String[][] materias; // 0 = codDisciplina // 1 = Nome // 2 = Turma //
+	     public static String[] cargahorario;
 		 public static String[][] aulas;
-		 
+
 		 public static int numMaterias(){ // retorna o numero de materias matriculadas
 		 return materias.length;
 		 }
@@ -57,6 +57,7 @@ abstract public class DadosAulas {
 		}
 		
 		public static void puxaMaterias(String html){
+
 			String html_tabela;
 			
 			if(html.indexOf("div id=\"fsDisciplinas_int\"") > -1){
@@ -66,16 +67,26 @@ abstract public class DadosAulas {
 			String[] linhas = html_tabela.split("(</tr>)");
 
 			materias = new String [linhas.length-4][9];
-			
+				cargahorario=new String[linhas.length-4];
 			for(int i=0; i < linhas.length - 4 ;i++){
 				linhas[i] = linhas[i].substring(linhas[i].indexOf(">")+1);
 				String colunas[] = linhas[i].split("</td>");
-				
+
+
 				for(int j=0; j < 3 ;j++){
 				if(colunas[j].toLowerCase().contains("<td>")) colunas[j] = colunas[j].replace("<td>", "");
 				if(colunas[j].indexOf(">") > 0){ colunas[j] = colunas[j].substring(colunas[j].indexOf(">")+1);}
 				materias[i][j] = colunas[j];
+
 				}
+				if(colunas[3].toLowerCase().contains("<td>")) colunas[3] = colunas[3].replace("<td>", "");
+				if(colunas[3].indexOf(">") > 0){ colunas[3] = colunas[3].substring(colunas[3].indexOf(">") + 1);}
+				cargahorario[i]=colunas[3];
+				double conta=Double.parseDouble(cargahorario[i]);
+				conta=conta*4.5;
+				int c=(int)conta;
+				cargahorario[i]=String.valueOf(c);
+
 			}
 		
 			}
