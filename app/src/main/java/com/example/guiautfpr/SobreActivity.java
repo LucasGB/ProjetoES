@@ -36,7 +36,7 @@ public class SobreActivity extends ActionBarActivity {
 			public void onClick(View v) {
 				 AlertDialog.Builder builder1 = new AlertDialog.Builder(SobreActivity.this);
 
-				 builder1.setTitle("Enviar opini„o");
+				 builder1.setTitle("Enviar opini√£o");
 				final EditText input = new EditText(SobreActivity.this);
 				builder1.setView(input);
 								

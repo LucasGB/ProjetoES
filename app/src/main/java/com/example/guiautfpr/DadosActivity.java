@@ -1,12 +1,7 @@
 package com.example.guiautfpr;
 
-import com.example.guiautfpr.R;
-import com.example.guiautfpr.R.id;
-import com.example.guiautfpr.R.layout;
-import com.example.guiautfpr.R.menu;
-
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 

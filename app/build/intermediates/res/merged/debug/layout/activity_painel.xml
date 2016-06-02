@@ -3,7 +3,8 @@
   android:id="@+id/sliding_pane_layout"  
   android:layout_width="match_parent"  
   android:layout_height="match_parent" >  
-          <ListView  
+          <ListView
+              android:background="@drawable/fundo"
     android:id="@+id/left_pane"  
     android:layout_width="280dp"  
     android:layout_height="match_parent"  
@@ -75,10 +76,19 @@
             android:text="Materia: Geometria Analitica "
             android:textSize="15sp"
             android:layout_gravity="center" />
-           
+        <TextView
+            android:id="@+id/faltas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="Faltas: 2/15"
+            android:textSize="15sp"
+            android:layout_gravity="center" />
 
 
-                      <LinearLayout
+
+
+        <LinearLayout
                           android:id="@+id/botoes"
                           android:layout_width="wrap_content"
                           android:layout_height="wrap_content"

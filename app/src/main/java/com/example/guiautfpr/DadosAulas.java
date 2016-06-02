@@ -14,7 +14,7 @@ abstract public class DadosAulas {
 		 
 		 public static String[][] aulas;
 		 
-		 public static int numMaterias(){ // retorna o número de matérias matriculadas
+		 public static int numMaterias(){ // retorna o numero de materias matriculadas
 		 return materias.length;
 		 }
 		 

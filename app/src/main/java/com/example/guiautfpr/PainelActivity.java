@@ -26,6 +26,7 @@ import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -34,6 +35,7 @@ public class PainelActivity extends ActionBarActivity implements PanelSlideListe
 	  private final int ONIBUS = 1;
 	//  private final int SOBRE = 2;
 	  private final int LOGOFF = 2;
+	  private String[] nomematerias;
 	  private SlidingPaneLayout mSlidingLayout;  
 	  private ListView mList;  
 	  Date hoje = null; // Sei l�
@@ -47,6 +49,7 @@ public class PainelActivity extends ActionBarActivity implements PanelSlideListe
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		getSupportActionBar().hide();
+		setVetorMaterias();
 		setContentView(R.layout.activity_painel);
 		//Referente ao menu
 		mSlidingLayout = (SlidingPaneLayout) findViewById(R.id.sliding_pane_layout);  
@@ -83,7 +86,7 @@ public class PainelActivity extends ActionBarActivity implements PanelSlideListe
 	    TextView materia  = (TextView) findViewById(R.id.materia);
 	    TextView nomeAluno  = (TextView) findViewById(R.id.nomeAluno);
 	    TextView data = (TextView) findViewById(R.id.data);
-	    
+		TextView faltas = (TextView) findViewById(R.id.faltas);
 	    String materiaAtual = "";
 	    String salaAtual = "";
 	    String faixaHr = "";
@@ -109,7 +112,10 @@ public class PainelActivity extends ActionBarActivity implements PanelSlideListe
     nomeAluno.setText("Logado como: " + DadosAluno.getNome());
 	blocoAula.setText("" + salaAtual);
 	materia.setText("" + materiaAtual);
-	faixaHorario.setText("" + faixaHr);
+	faixaHorario.setText("" + faixaHr);int cod =  getCod(materiaAtual);
+		if(cod!=-1) {
+			faltas.setText("Faltas: " + DadosAulas.materias[cod][5]);
+		}else{faltas.setText("Faltas: N/A");}
 	data.setText("" + weekdays[dia_semana+2] );
 	}
 	
@@ -121,7 +127,7 @@ public class PainelActivity extends ActionBarActivity implements PanelSlideListe
 	    TextView materia  = (TextView) findViewById(R.id.materia);
 	    TextView nomeAluno  = (TextView) findViewById(R.id.nomeAluno);
 	    TextView data = (TextView) findViewById(R.id.data);
-	    
+		TextView faltas = (TextView) findViewById(R.id.faltas);
 	    String materiaAtual = "";
 	    String salaAtual = "";
 	   
@@ -144,7 +150,11 @@ public class PainelActivity extends ActionBarActivity implements PanelSlideListe
 	blocoAula.setText("" + salaAtual);
 	materia.setText("" + materiaAtual);
 	faixaHorario.setText("" + faixaHr);
-	data.setText("" + weekdays[dia_semana+2] );
+		int cod =  getCod(materiaAtual);
+		if(cod!=-1) {
+			faltas.setText("Faltas: " + DadosAulas.materias[cod][5]);
+		}else{faltas.setText("Faltas: N/A");}
+		data.setText("" + weekdays[dia_semana+2] );
 	}
 	
 	
@@ -227,5 +237,23 @@ public void onPanelOpened(View arg0) {
 
 public void onPanelSlide(View arg0, float arg1) {  
   // TODO Enquanto o painel desliza  
-}  
+}
+	public int getCod(String nomeM){
+		int i =0;
+		for(i = 0; i < DadosAulas.numMaterias(); i++ ){
+			if(nomematerias[i].equals(nomeM))
+			return i;
+		}
+		return -1;
+
+	}
+
+	public void setVetorMaterias(){
+		nomematerias = new String[DadosAulas.numMaterias()];
+		for( int i = 0; i < DadosAulas.numMaterias(); i++ ){
+			nomematerias[i] = new String(DadosAulas.materias[i][1]);
+		}
+
+
+	}
 }

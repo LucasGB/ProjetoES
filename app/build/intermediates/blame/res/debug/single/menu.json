@@ -1,34 +1,34 @@
 [
     {
-        "merged": "/home/lucas/Documents/ProjetoES/app/build/intermediates/res/merged/debug/menu/relatorio.xml",
-        "source": "/home/lucas/Documents/ProjetoES/app/src/main/res/menu/relatorio.xml"
+        "merged": "/data/BCC/workspace/ProjetoES/app/build/intermediates/res/merged/debug/menu/painel.xml",
+        "source": "/data/BCC/workspace/ProjetoES/app/src/main/res/menu/painel.xml"
     },
     {
-        "merged": "/home/lucas/Documents/ProjetoES/app/build/intermediates/res/merged/debug/menu/onibus.xml",
-        "source": "/home/lucas/Documents/ProjetoES/app/src/main/res/menu/onibus.xml"
+        "merged": "/data/BCC/workspace/ProjetoES/app/build/intermediates/res/merged/debug/menu/tela_splash.xml",
+        "source": "/data/BCC/workspace/ProjetoES/app/src/main/res/menu/tela_splash.xml"
     },
     {
-        "merged": "/home/lucas/Documents/ProjetoES/app/build/intermediates/res/merged/debug/menu/sobre.xml",
-        "source": "/home/lucas/Documents/ProjetoES/app/src/main/res/menu/sobre.xml"
+        "merged": "/data/BCC/workspace/ProjetoES/app/build/intermediates/res/merged/debug/menu/relatorio.xml",
+        "source": "/data/BCC/workspace/ProjetoES/app/src/main/res/menu/relatorio.xml"
     },
     {
-        "merged": "/home/lucas/Documents/ProjetoES/app/build/intermediates/res/merged/debug/menu/painel.xml",
-        "source": "/home/lucas/Documents/ProjetoES/app/src/main/res/menu/painel.xml"
+        "merged": "/data/BCC/workspace/ProjetoES/app/build/intermediates/res/merged/debug/menu/sobre.xml",
+        "source": "/data/BCC/workspace/ProjetoES/app/src/main/res/menu/sobre.xml"
     },
     {
-        "merged": "/home/lucas/Documents/ProjetoES/app/build/intermediates/res/merged/debug/menu/menu_relatorio.xml",
-        "source": "/home/lucas/Documents/ProjetoES/app/src/main/res/menu/menu_relatorio.xml"
+        "merged": "/data/BCC/workspace/ProjetoES/app/build/intermediates/res/merged/debug/menu/dados.xml",
+        "source": "/data/BCC/workspace/ProjetoES/app/src/main/res/menu/dados.xml"
     },
     {
-        "merged": "/home/lucas/Documents/ProjetoES/app/build/intermediates/res/merged/debug/menu/login.xml",
-        "source": "/home/lucas/Documents/ProjetoES/app/src/main/res/menu/login.xml"
+        "merged": "/data/BCC/workspace/ProjetoES/app/build/intermediates/res/merged/debug/menu/login.xml",
+        "source": "/data/BCC/workspace/ProjetoES/app/src/main/res/menu/login.xml"
     },
     {
-        "merged": "/home/lucas/Documents/ProjetoES/app/build/intermediates/res/merged/debug/menu/tela_splash.xml",
-        "source": "/home/lucas/Documents/ProjetoES/app/src/main/res/menu/tela_splash.xml"
+        "merged": "/data/BCC/workspace/ProjetoES/app/build/intermediates/res/merged/debug/menu/menu_relatorio.xml",
+        "source": "/data/BCC/workspace/ProjetoES/app/src/main/res/menu/menu_relatorio.xml"
     },
     {
-        "merged": "/home/lucas/Documents/ProjetoES/app/build/intermediates/res/merged/debug/menu/dados.xml",
-        "source": "/home/lucas/Documents/ProjetoES/app/src/main/res/menu/dados.xml"
+        "merged": "/data/BCC/workspace/ProjetoES/app/build/intermediates/res/merged/debug/menu/onibus.xml",
+        "source": "/data/BCC/workspace/ProjetoES/app/src/main/res/menu/onibus.xml"
     }
 ]

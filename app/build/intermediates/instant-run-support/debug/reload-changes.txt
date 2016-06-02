@@ -1,8 +1,0 @@
-CHANGED,/home/lucas/Documents/ProjetoES/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/example/guiautfpr/LoginActivity$Logar$1$override.class
-CHANGED,/home/lucas/Documents/ProjetoES/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/orochi/guiautfpr/persistence/DatabaseOperations$override.class
-CHANGED,/home/lucas/Documents/ProjetoES/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/example/guiautfpr/PainelActivity$override.class
-CHANGED,/home/lucas/Documents/ProjetoES/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/example/guiautfpr/LoginActivity$1$override.class
-CHANGED,/home/lucas/Documents/ProjetoES/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/example/guiautfpr/LoginActivity$Logar$override.class
-CHANGED,/home/lucas/Documents/ProjetoES/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/example/guiautfpr/LoginActivity$2$override.class
-CHANGED,/home/lucas/Documents/ProjetoES/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/example/guiautfpr/LoginActivity$override.class
-CHANGED,/home/lucas/Documents/ProjetoES/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/android/tools/fd/runtime/AppPatchesLoaderImpl.class

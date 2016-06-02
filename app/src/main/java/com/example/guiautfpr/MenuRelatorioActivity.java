@@ -21,6 +21,7 @@ public class MenuRelatorioActivity extends ActionBarActivity {
 		
 		int nMaterias = DadosAulas.numMaterias();
 		final Button[] botao = new Button[nMaterias];
+
 		for( i = 0; i < nMaterias; i++ ){
 		botao[i] = new Button(this);
 		botao[i].setText(DadosAulas.materias[i][1]);
@@ -35,7 +36,8 @@ public class MenuRelatorioActivity extends ActionBarActivity {
 				
 		 		intent.putExtra("codigo", v.getId());
 		     	startActivity(intent);
-			}
+
+				}
 			});
 		}
 	}
