@@ -87,6 +87,7 @@ public class PainelActivity extends ActionBarActivity implements PanelSlideListe
 	    TextView nomeAluno  = (TextView) findViewById(R.id.nomeAluno);
 	    TextView data = (TextView) findViewById(R.id.data);
 		TextView faltas = (TextView) findViewById(R.id.faltas);
+		TextView frequencia = (TextView)findViewById(id.frequencia);
 	    String materiaAtual = "";
 	    String salaAtual = "";
 	    String faixaHr = "";
@@ -113,9 +114,26 @@ public class PainelActivity extends ActionBarActivity implements PanelSlideListe
 	blocoAula.setText("" + salaAtual);
 	materia.setText("" + materiaAtual);
 	faixaHorario.setText("" + faixaHr);int cod =  getCod(materiaAtual);
+		String faltasmateria = new String();
+		String faltaspodeter = new String();
 		if(cod!=-1) {
-			faltas.setText("Faltas: " + DadosAulas.materias[cod][5]+"/"+ DadosAulas.cargahorario[cod]);
+			faltasmateria = DadosAulas.materias[cod][5];
+			faltaspodeter = DadosAulas.cargahorario[cod];
+			int faltastenho = Integer.parseInt(faltasmateria);
+			int faltasposster = Integer.parseInt(faltaspodeter);
+			faltas.setText("Faltas: " + faltasmateria+"/"+ faltaspodeter);
+			frequencia.setText("Frequência: "+DadosAulas.materias[cod][8]);
+			if(faltastenho>=(faltasposster-faltasposster/4.5)) {
+				faltas.setTextColor(0xFF0000);
+				frequencia.setTextColor(0xFF000);
+			}
+
 		}else{faltas.setText("Faltas: N/A");}
+
+/*
+			if(cod!=-1) {
+			faltas.setText("Faltas: " + DadosAulas.materias[cod][5]+"/"+ DadosAulas.cargahorario[cod]);
+		}else{faltas.setText("Faltas: N/A");}*/
 	data.setText("" + weekdays[dia_semana+2] );
 	}
 	
@@ -128,6 +146,7 @@ public class PainelActivity extends ActionBarActivity implements PanelSlideListe
 	    TextView nomeAluno  = (TextView) findViewById(R.id.nomeAluno);
 	    TextView data = (TextView) findViewById(R.id.data);
 		TextView faltas = (TextView) findViewById(R.id.faltas);
+		TextView frequencia = (TextView) findViewById(id.frequencia);
 	    String materiaAtual = "";
 	    String salaAtual = "";
 	   
@@ -151,8 +170,21 @@ public class PainelActivity extends ActionBarActivity implements PanelSlideListe
 	materia.setText("" + materiaAtual);
 	faixaHorario.setText("" + faixaHr);
 		int cod =  getCod(materiaAtual);
+		String faltasmateria = new String();
+		String faltaspodeter = new String();
 		if(cod!=-1) {
-			faltas.setText("Faltas: " + DadosAulas.materias[cod][5]+"/"+ DadosAulas.cargahorario[cod]);
+			faltasmateria = DadosAulas.materias[cod][5];
+			faltaspodeter = DadosAulas.cargahorario[cod];
+			int faltastenho = Integer.parseInt(faltasmateria);
+			int faltasposster = Integer.parseInt(faltaspodeter);
+			frequencia.setText("Frequência: "+DadosAulas.materias[cod][8]);
+			faltas.setText("Faltas: " + faltasmateria+"/"+ faltaspodeter);
+			if(faltastenho>=(faltasposster-faltasposster/4.5)){
+				faltas.setTextColor(0xFF0000);
+				frequencia.setTextColor(0xFF000);
+			}
+
+
 		}else{faltas.setText("Faltas: N/A");}
 		data.setText("" + weekdays[dia_semana+2] );
 	}

@@ -19,14 +19,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e95afaa-6d81-4f3f-b62d-7e974c103e44" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_19_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_19_1_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_19_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_v4_19_1_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_19_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_19_1_0.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_19_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_v4_19_1_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
     </list>
     <ignored path="GuiaUTFPR.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -60,18 +60,9 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.16129">
-              <caret line="89" column="48" selection-start-line="89" selection-start-column="48" selection-end-line="89" selection-end-column="48" />
-              <folding>
-                <element signature="e#731#764#0" expanded="true" />
-                <element signature="e#789#824#0" expanded="true" />
-                <element signature="e#850#885#0" expanded="true" />
-                <element signature="e#909#942#0" expanded="true" />
-                <element signature="e#4024#4057#0" expanded="true" />
-                <element signature="e#4104#4139#0" expanded="true" />
-                <element signature="e#4187#4222#0" expanded="true" />
-                <element signature="e#4268#4301#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="-4.0">
+              <caret line="86" column="8" selection-start-line="86" selection-start-column="8" selection-end-line="86" selection-end-column="8" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -80,39 +71,30 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/guiautfpr/RelatorioActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <caret line="29" column="62" selection-start-line="29" selection-start-column="62" selection-end-line="29" selection-end-column="90" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PainelActivity.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PainelActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/guiautfpr/PainelActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.206897">
-              <caret line="124" column="69" selection-start-line="124" selection-start-column="69" selection-end-line="124" selection-end-column="69" />
+            <state vertical-scroll-proportion="2.4896693">
+              <caret line="183" column="47" selection-start-line="183" selection-start-column="47" selection-end-line="183" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <marker date="1465175290737" expanded="true" signature="4236:4958" placeholder="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DadosAulas.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DadosAulas.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/guiautfpr/DadosAulas.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.680203">
-              <caret line="81" column="53" selection-start-line="81" selection-start-column="53" selection-end-line="81" selection-end-column="53" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/guiautfpr/LoginActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="179" column="0" selection-start-line="179" selection-start-column="0" selection-end-line="179" selection-end-column="0" />
+              <caret line="81" column="53" selection-start-line="81" selection-start-column="53" selection-end-line="81" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -123,16 +105,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="46" column="16" selection-start-line="45" selection-start-column="83" selection-end-line="46" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DadosActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/guiautfpr/DadosActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -1748,8 +1720,8 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/guiautfpr/SobreActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/guiautfpr/MenuRelatorioActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_painel.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/guiautfpr/PainelActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/guiautfpr/DadosAulas.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/guiautfpr/PainelActivity.java" />
       </list>
     </option>
   </component>
@@ -1785,8 +1757,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="ProjectPane" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -1880,20 +1850,23 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="0021374741" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="" />
     <property name="device.picker.selection" value="0423894739" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/GuiaUTFPR2" />
     <property name="android.project.structure.last.selected" value="app" />
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager2.WIDTH" value="300" />
     <property name="FullScreen" value="false" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Nexus_4_API_19" />
   </component>
   <component name="RunManager" selected="Android Application.app">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -2109,16 +2082,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32903227" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.80804956" sideWeight="0.49402392" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15944272" sideWeight="0.49402392" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3869969" sideWeight="0.5059761" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Monitor" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2987616" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2987616" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31633466" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32662538" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -2127,7 +2100,6 @@
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19601594" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -2141,6 +2113,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -2217,6 +2190,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <marker date="1465175290737" expanded="true" signature="4236:4958" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -2320,6 +2294,7 @@
           <caret line="224" column="0" selection-start-line="224" selection-start-column="0" selection-end-line="224" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <marker date="1465175290737" expanded="true" signature="4236:4958" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -2530,8 +2505,8 @@
         <state vertical-scroll-proportion="0.33245382">
           <caret line="1519" column="18" selection-start-line="1519" selection-start-column="18" selection-end-line="1519" selection-end-column="18" />
           <folding>
-            <element signature="e#56734#56735#0" expanded="true" />
-            <element signature="e#56761#56762#0" expanded="true" />
+            <element signature="e#56734#56735#0" expanded="false" />
+            <element signature="e#56761#56762#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2568,49 +2543,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_painel.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/guiautfpr/DadosAulas.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.16129">
-          <caret line="89" column="48" selection-start-line="89" selection-start-column="48" selection-end-line="89" selection-end-column="48" />
-          <folding>
-            <element signature="e#731#764#0" expanded="true" />
-            <element signature="e#789#824#0" expanded="true" />
-            <element signature="e#850#885#0" expanded="true" />
-            <element signature="e#909#942#0" expanded="true" />
-            <element signature="e#4024#4057#0" expanded="true" />
-            <element signature="e#4104#4139#0" expanded="true" />
-            <element signature="e#4187#4222#0" expanded="true" />
-            <element signature="e#4268#4301#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0">
+          <caret line="81" column="53" selection-start-line="81" selection-start-column="53" selection-end-line="81" selection-end-column="53" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/guiautfpr/RelatorioActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <caret line="29" column="62" selection-start-line="29" selection-start-column="62" selection-end-line="29" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_painel.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.0">
+          <caret line="86" column="8" selection-start-line="86" selection-start-column="8" selection-end-line="86" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/guiautfpr/PainelActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.206897">
-          <caret line="124" column="69" selection-start-line="124" selection-start-column="69" selection-end-line="124" selection-end-column="69" />
+        <state vertical-scroll-proportion="2.4896693">
+          <caret line="183" column="47" selection-start-line="183" selection-start-column="47" selection-end-line="183" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
+            <marker date="1465175290737" expanded="true" signature="4236:4958" placeholder="{...}" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/guiautfpr/DadosAulas.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.680203">
-          <caret line="81" column="53" selection-start-line="81" selection-start-column="53" selection-end-line="81" selection-end-column="53" />
-          <folding />
         </state>
       </provider>
     </entry>
