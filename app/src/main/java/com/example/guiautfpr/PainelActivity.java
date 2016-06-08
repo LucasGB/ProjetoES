@@ -1,6 +1,9 @@
 package com.example.guiautfpr;
 
+import java.text.DateFormat;
 import java.text.DateFormatSymbols;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -10,6 +13,7 @@ import com.example.guiautfpr.R.layout;
 import com.orochi.guiautfpr.persistence.DatabaseOperations;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.database.Cursor;
 import android.graphics.Color;
 import android.support.v4.widget.SlidingPaneLayout;
@@ -30,6 +34,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class PainelActivity extends ActionBarActivity implements PanelSlideListener, OnItemClickListener {
     private final int RELATORIOS = 0;
@@ -44,6 +49,7 @@ public class PainelActivity extends ActionBarActivity implements PanelSlideListe
     private SlidingPaneLayout mSlidingLayout;
     private ListView mList;
     private Context ctx = this;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,6 +83,8 @@ public class PainelActivity extends ActionBarActivity implements PanelSlideListe
 //		        alert12.show();
 
     }
+
+
 
     void proxima() {
         TextView blocoAula = (TextView) findViewById(R.id.blocoAula);
@@ -166,6 +174,7 @@ public class PainelActivity extends ActionBarActivity implements PanelSlideListe
         String salaAtual = "";
 
         String faixaHr = DadosAulas.faixaHoraria(hora_dia);
+        Log.i("Horas: ",faixaHr);
         if (dia_semana < 0) dia_semana = 5;
 
         if (DadosAulas.aulas[hora_dia][dia_semana].equals("&nbsp;")) { // Se n�o tiver aula nesse hor�rio
@@ -208,6 +217,8 @@ public class PainelActivity extends ActionBarActivity implements PanelSlideListe
             frequencia.setTextColor(Color.parseColor("#000000"));
 
         }
+
+
 
         data.setText("" + weekdays[dia_semana + 2]);
     }

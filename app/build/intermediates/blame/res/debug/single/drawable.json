@@ -66,5 +66,9 @@
     {
         "merged": "/data/BCC/workspace/ProjetoES/app/build/intermediates/res/merged/debug/drawable/abc_search_dropdown_dark.xml",
         "source": "/data/BCC/workspace/ProjetoES/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.1.0/res/drawable/abc_search_dropdown_dark.xml"
+    },
+    {
+        "merged": "/data/BCC/workspace/ProjetoES/app/build/intermediates/res/merged/debug/drawable/mygradient.xml",
+        "source": "/data/BCC/workspace/ProjetoES/app/src/main/res/drawable/mygradient.xml"
     }
 ]

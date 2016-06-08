@@ -21,7 +21,8 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="@drawable/fundo"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+        android:weightSum="1">
                   <TextView
             android:id="@+id/nomeAluno"
             android:layout_width="wrap_content"
@@ -30,23 +31,36 @@
             android:textSize="12sp"
             android:layout_gravity="left" />
 
-        <ImageView
-            android:id="@+id/logo"
-            android:layout_width="220dp"
-            android:layout_height="93dp"
-            android:layout_gravity="center_horizontal"
-            android:paddingTop="-100dp"
-            android:src="@drawable/logo_guia" />
+
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="220dp"
+                android:layout_height="93dp"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="-100dp"
+                android:src="@drawable/logo_guia" />
 
         <TextView
             android:id="@+id/textView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sua próxima aula será em:"
+            android:text="Sua próxima aula será de:"
             android:paddingTop="10dp"
+            android:textSize="16sp"
             android:layout_gravity="center" />
-        
-                <TextView
+
+        <TextView
+         android:id="@+id/materia"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:paddingTop="10dp"
+         android:text="Geometria Analitica "
+         android:textSize="25sp"
+         android:textStyle="bold"
+         android:layout_gravity="center" />
+
+        <TextView
             android:id="@+id/blocoAula"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -58,39 +72,31 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="12:00-13:30"
-            android:textSize="14sp"
+            android:textSize="18sp"
             android:layout_gravity="center" />
                     <TextView
             android:id="@+id/data"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="segunda-feira"
-            android:textSize="14sp"
+            android:textSize="18sp"
             android:layout_gravity="center" />
-              
-           <TextView
-            android:id="@+id/materia"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingTop="10dp"
-            android:text="Materia: Geometria Analitica "
-            android:textSize="15sp"
-            android:layout_gravity="center" />
+
         <TextView
             android:id="@+id/faltas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingTop="10dp"
-            android:text="Faltas: 2"
-            android:textSize="15sp"
+            android:paddingTop="30dp"
+            android:text="Faltas: 2/18"
+            android:textSize="18sp"
             android:layout_gravity="center" />
         <TextView
             android:id="@+id/frequencia"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingTop="10dp"
-            android:text="Freq: 85%"
-            android:textSize="15sp"
+            android:paddingTop="3dp"
+            android:text="Frequencia: 85%"
+            android:textSize="18sp"
             android:layout_gravity="center" />
 
 
@@ -105,8 +111,9 @@
                           android:paddingBottom="@dimen/activity_vertical_margin"
                           android:paddingLeft="@dimen/activity_horizontal_margin"
                           android:paddingRight="@dimen/activity_horizontal_margin"
-                          android:paddingTop="@dimen/activity_vertical_margin"    android:layout_gravity="center"
-                          
+                          android:paddingTop="@dimen/activity_vertical_margin"
+                          android:layout_gravity="center"
+
                            >
     
                       <Button
@@ -129,6 +136,6 @@
                            android:textSize="15sp"
                           android:text="Proxima aula" />
                       </LinearLayout>
-                      
-</LinearLayout>
+
+    </LinearLayout>
   </android.support.v4.widget.SlidingPaneLayout>

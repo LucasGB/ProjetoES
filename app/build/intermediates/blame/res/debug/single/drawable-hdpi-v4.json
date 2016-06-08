@@ -100,6 +100,10 @@
         "source": "/data/BCC/workspace/ProjetoES/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.1.0/res/drawable-hdpi/abc_list_longpressed_holo.9.png"
     },
     {
+        "merged": "/data/BCC/workspace/ProjetoES/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/senha.png",
+        "source": "/data/BCC/workspace/ProjetoES/app/src/main/res/drawable-hdpi/senha.png"
+    },
+    {
         "merged": "/data/BCC/workspace/ProjetoES/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_ic_voice_search.png",
         "source": "/data/BCC/workspace/ProjetoES/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.1.0/res/drawable-hdpi/abc_ic_voice_search.png"
     },
@@ -132,6 +136,10 @@
         "source": "/data/BCC/workspace/ProjetoES/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.1.0/res/drawable-hdpi/abc_ab_bottom_transparent_light_holo.9.png"
     },
     {
+        "merged": "/data/BCC/workspace/ProjetoES/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/login.png",
+        "source": "/data/BCC/workspace/ProjetoES/app/src/main/res/drawable-hdpi/login.png"
+    },
+    {
         "merged": "/data/BCC/workspace/ProjetoES/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_ab_stacked_transparent_light_holo.9.png",
         "source": "/data/BCC/workspace/ProjetoES/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.1.0/res/drawable-hdpi/abc_ab_stacked_transparent_light_holo.9.png"
     },
@@ -146,6 +154,10 @@
     {
         "merged": "/data/BCC/workspace/ProjetoES/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/logoff.png",
         "source": "/data/BCC/workspace/ProjetoES/app/src/main/res/drawable-hdpi/logoff.png"
+    },
+    {
+        "merged": "/data/BCC/workspace/ProjetoES/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/fotinha.jpg",
+        "source": "/data/BCC/workspace/ProjetoES/app/src/main/res/drawable-hdpi/fotinha.jpg"
     },
     {
         "merged": "/data/BCC/workspace/ProjetoES/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/logo_onibus.png",
@@ -246,6 +258,10 @@
     {
         "merged": "/data/BCC/workspace/ProjetoES/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_cab_background_bottom_holo_dark.9.png",
         "source": "/data/BCC/workspace/ProjetoES/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.1.0/res/drawable-hdpi/abc_cab_background_bottom_holo_dark.9.png"
+    },
+    {
+        "merged": "/data/BCC/workspace/ProjetoES/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/relogio.png",
+        "source": "/data/BCC/workspace/ProjetoES/app/src/main/res/drawable-hdpi/relogio.png"
     },
     {
         "merged": "/data/BCC/workspace/ProjetoES/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_menu_hardkey_panel_holo_dark.9.png",
