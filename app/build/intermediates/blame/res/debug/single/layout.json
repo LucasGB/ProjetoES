@@ -44,6 +44,10 @@
         "source": "/data/BCC/workspace/ProjetoES/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.1.0/res/layout/abc_search_view.xml"
     },
     {
+        "merged": "/data/BCC/workspace/ProjetoES/app/build/intermediates/res/merged/debug/layout/listaitem.xml",
+        "source": "/data/BCC/workspace/ProjetoES/app/src/main/res/layout/listaitem.xml"
+    },
+    {
         "merged": "/data/BCC/workspace/ProjetoES/app/build/intermediates/res/merged/debug/layout/abc_action_bar_decor_overlay.xml",
         "source": "/data/BCC/workspace/ProjetoES/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.1.0/res/layout/abc_action_bar_decor_overlay.xml"
     },

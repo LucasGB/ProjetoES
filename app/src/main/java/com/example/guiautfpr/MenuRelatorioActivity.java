@@ -1,5 +1,6 @@
 package com.example.guiautfpr;
 
+import android.graphics.Color;
 import android.support.v7.app.ActionBarActivity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -25,6 +26,7 @@ public class MenuRelatorioActivity extends ActionBarActivity {
 		for( i = 0; i < nMaterias; i++ ){
 		botao[i] = new Button(this);
 		botao[i].setText(DadosAulas.materias[i][1]);
+			botao[i].setTextColor(Color.parseColor("#ffffff"));
 		botao[i].setId(i);
 		LinearLayout layout = (LinearLayout) findViewById(R.id.body);
 		layout.addView(botao[i]);

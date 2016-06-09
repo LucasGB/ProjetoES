@@ -1,50 +1,53 @@
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#212121"
+    android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@drawable/fundo"
-    android:orientation="vertical" >
+    android:paddingTop="@dimen/activity_vertical_margin">
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Criado por V." 
-        android:textSize="15sp"
-        />
+        android:text="Criado por"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Particularmente eu achei que este aplicativo ficou uma bosta, mas gostaria de me dar a sua opinião?" 
-android:paddingTop="15dp"
-        android:textSize="15sp"
-        />
+        android:paddingTop="15dp"
+        android:text="Particularmente eu achei que este aplicativo ficou uma bosta, mas gostaria de me dar a sua opinião?"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
 
     <Button
-    
         android:id="@+id/enviarOpiniao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Enviar opinião" />
-       <TextView
+        android:text="Enviar opinião"
+        android:textColor="#ffffff" />
+
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:paddingTop="20dp"
         android:text="Ideias são sempre bem vindas!"
-android:paddingTop="20dp"
-        android:textSize="15sp"
-        />
-       
-              <TextView
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ah, já ia esquecendo: Este aplicativo só funciona pro Câmpus Campo Mourão. vlwflw" 
-android:paddingTop="20dp"
-        android:textSize="15sp"
-        />
-       
-           
+        android:paddingTop="20dp"
+        android:text="Ah, já ia esquecendo: Este aplicativo só funciona pro Câmpus Campo Mourão. vlwflw"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+
 </LinearLayout>

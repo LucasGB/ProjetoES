@@ -1,20 +1,14 @@
 package com.example.guiautfpr;
 
-import java.text.DateFormat;
 import java.text.DateFormatSymbols;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
-import com.example.guiautfpr.R;
 import com.example.guiautfpr.R.id;
 import com.example.guiautfpr.R.layout;
 import com.orochi.guiautfpr.persistence.DatabaseOperations;
 
 import android.content.Context;
-import android.content.DialogInterface;
-import android.database.Cursor;
 import android.graphics.Color;
 import android.support.v4.widget.SlidingPaneLayout;
 import android.support.v4.widget.SlidingPaneLayout.PanelSlideListener;
@@ -27,14 +21,10 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
-import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class PainelActivity extends ActionBarActivity implements PanelSlideListener, OnItemClickListener {
     private final int RELATORIOS = 0;
@@ -59,16 +49,20 @@ public class PainelActivity extends ActionBarActivity implements PanelSlideListe
         setContentView(R.layout.activity_painel);
         //Referente ao menu
         mSlidingLayout = (SlidingPaneLayout) findViewById(R.id.sliding_pane_layout);
+
         mSlidingLayout.setPanelSlideListener(this);
+
 
         String[] opcoes = new String[]{
                 "Relatórios",
                 "Horário dos Ônibus",
                 "Logoff"};
 
+
         mList = (ListView) findViewById(R.id.left_pane);
-        mList.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, opcoes));
+        mList.setAdapter(new ArrayAdapter<String>(this, layout.listaitem, opcoes));
         mList.setOnItemClickListener(this);
+
         // Fim do que se refere ao menu
 
         final AlertDialog.Builder builder1 = new AlertDialog.Builder(this);
@@ -141,8 +135,8 @@ public class PainelActivity extends ActionBarActivity implements PanelSlideListe
             int faltasposster = Integer.parseInt(faltaspodeter);
             faltas.setText("Faltas: " + faltasmateria + "/" + faltaspodeter);
             frequencia.setText("Frequência: " + DadosAulas.materias[cod][8]);
-            faltas.setTextColor(Color.parseColor("#000000"));
-            frequencia.setTextColor(Color.parseColor("#000000"));
+            faltas.setTextColor(Color.parseColor("#ffffff"));
+            frequencia.setTextColor(Color.parseColor("#ffffff"));
             if (faltastenho >= (faltasposster - faltasposster / 4.5)) {
                 faltas.setTextColor(Color.parseColor("#ff0000"));
                 frequencia.setTextColor(Color.parseColor("#ff0000"));
@@ -151,8 +145,8 @@ public class PainelActivity extends ActionBarActivity implements PanelSlideListe
         } else {
             faltas.setText("Faltas: N/A");
             frequencia.setText("N/A");
-            faltas.setTextColor(Color.parseColor("#000000"));
-            frequencia.setTextColor(Color.parseColor("#000000"));
+            faltas.setTextColor(Color.parseColor("#ffffff"));
+            frequencia.setTextColor(Color.parseColor("#ffffff"));
         }
 
 /*
@@ -202,8 +196,8 @@ public class PainelActivity extends ActionBarActivity implements PanelSlideListe
             int faltasposster = Integer.parseInt(faltaspodeter);
             frequencia.setText("Frequência: " + DadosAulas.materias[cod][8]);
             faltas.setText("Faltas: " + faltasmateria + "/" + faltaspodeter);
-            faltas.setTextColor(Color.parseColor("#000000"));
-            frequencia.setTextColor(Color.parseColor("#000000"));
+            faltas.setTextColor(Color.parseColor("#ffffff"));
+            frequencia.setTextColor(Color.parseColor("#ffffff"));
             if (faltastenho >= (faltasposster - faltasposster / 4.5)) {
                 faltas.setTextColor(Color.parseColor("#ff0000"));
                 frequencia.setTextColor(Color.parseColor("#ff0000"));
@@ -213,8 +207,8 @@ public class PainelActivity extends ActionBarActivity implements PanelSlideListe
         } else {
             faltas.setText("Faltas: N/A");
             frequencia.setText("N/A");
-            faltas.setTextColor(Color.parseColor("#000000"));
-            frequencia.setTextColor(Color.parseColor("#000000"));
+            faltas.setTextColor(Color.parseColor("#ffffff"));
+            frequencia.setTextColor(Color.parseColor("#ffffff"));
 
         }
 

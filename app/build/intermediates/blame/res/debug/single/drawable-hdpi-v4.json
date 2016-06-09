@@ -40,6 +40,10 @@
         "source": "/data/BCC/workspace/ProjetoES/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.1.0/res/drawable-hdpi/abc_ic_ab_back_holo_light.png"
     },
     {
+        "merged": "/data/BCC/workspace/ProjetoES/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/unc.png",
+        "source": "/data/BCC/workspace/ProjetoES/app/src/main/res/drawable-hdpi/unc.png"
+    },
+    {
         "merged": "/data/BCC/workspace/ProjetoES/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/logo.png",
         "source": "/data/BCC/workspace/ProjetoES/app/src/main/res/drawable-hdpi/logo.png"
     },
@@ -50,6 +54,10 @@
     {
         "merged": "/data/BCC/workspace/ProjetoES/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/simbolo.png",
         "source": "/data/BCC/workspace/ProjetoES/app/src/main/res/drawable-hdpi/simbolo.png"
+    },
+    {
+        "merged": "/data/BCC/workspace/ProjetoES/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/checkedbox.png",
+        "source": "/data/BCC/workspace/ProjetoES/app/src/main/res/drawable-hdpi/checkedbox.png"
     },
     {
         "merged": "/data/BCC/workspace/ProjetoES/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_cab_background_top_holo_dark.9.png",
@@ -108,6 +116,10 @@
         "source": "/data/BCC/workspace/ProjetoES/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.1.0/res/drawable-hdpi/abc_ic_voice_search.png"
     },
     {
+        "merged": "/data/BCC/workspace/ProjetoES/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/c.png",
+        "source": "/data/BCC/workspace/ProjetoES/app/src/main/res/drawable-hdpi/c.png"
+    },
+    {
         "merged": "/data/BCC/workspace/ProjetoES/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_ab_stacked_transparent_dark_holo.9.png",
         "source": "/data/BCC/workspace/ProjetoES/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.1.0/res/drawable-hdpi/abc_ab_stacked_transparent_dark_holo.9.png"
     },
@@ -126,6 +138,10 @@
     {
         "merged": "/data/BCC/workspace/ProjetoES/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_ab_solid_dark_holo.9.png",
         "source": "/data/BCC/workspace/ProjetoES/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.1.0/res/drawable-hdpi/abc_ab_solid_dark_holo.9.png"
+    },
+    {
+        "merged": "/data/BCC/workspace/ProjetoES/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/logonovissimodenovo.png",
+        "source": "/data/BCC/workspace/ProjetoES/app/src/main/res/drawable-hdpi/logonovissimodenovo.png"
     },
     {
         "merged": "/data/BCC/workspace/ProjetoES/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_tab_selected_pressed_holo.9.png",
@@ -264,8 +280,20 @@
         "source": "/data/BCC/workspace/ProjetoES/app/src/main/res/drawable-hdpi/relogio.png"
     },
     {
+        "merged": "/data/BCC/workspace/ProjetoES/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/logonovo.png",
+        "source": "/data/BCC/workspace/ProjetoES/app/src/main/res/drawable-hdpi/logonovo.png"
+    },
+    {
+        "merged": "/data/BCC/workspace/ProjetoES/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/logonovissimo.png",
+        "source": "/data/BCC/workspace/ProjetoES/app/src/main/res/drawable-hdpi/logonovissimo.png"
+    },
+    {
         "merged": "/data/BCC/workspace/ProjetoES/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_menu_hardkey_panel_holo_dark.9.png",
         "source": "/data/BCC/workspace/ProjetoES/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.1.0/res/drawable-hdpi/abc_menu_hardkey_panel_holo_dark.9.png"
+    },
+    {
+        "merged": "/data/BCC/workspace/ProjetoES/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/uncheckbox.png",
+        "source": "/data/BCC/workspace/ProjetoES/app/src/main/res/drawable-hdpi/uncheckbox.png"
     },
     {
         "merged": "/data/BCC/workspace/ProjetoES/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_ic_search.png",

@@ -260,6 +260,10 @@
         "source": "/data/BCC/workspace/ProjetoES/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.1.0/res/drawable-mdpi/abc_spinner_ab_disabled_holo_light.9.png"
     },
     {
+        "merged": "/data/BCC/workspace/ProjetoES/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/a.png",
+        "source": "/data/BCC/workspace/ProjetoES/app/src/main/res/drawable-mdpi/a.png"
+    },
+    {
         "merged": "/data/BCC/workspace/ProjetoES/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_textfield_search_right_selected_holo_dark.9.png",
         "source": "/data/BCC/workspace/ProjetoES/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.1.0/res/drawable-mdpi/abc_textfield_search_right_selected_holo_dark.9.png"
     },
